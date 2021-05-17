@@ -150,4 +150,14 @@ Route::prefix('aboutus')->group(function(){
     Route::get('/delete/{id}','App\Http\Controllers\Dashboard\AgentsController@delete')->name('aboutus.delete');
 });
 
+//Blog
+Route::prefix('blogs')->group(function(){
+    Route::get('/view','App\Http\Controllers\Dashboard\BlogsController@view')->name('blogs.view');
+    Route::get('/add','App\Http\Controllers\Dashboard\BlogsController@add')->name('blogs.add');
+    Route::post('/store','App\Http\Controllers\Dashboard\BlogsController@store')->name('blogs.store');
+    Route::get('/edit/{id}','App\Http\Controllers\Dashboard\BlogsController@edit')->name('blogs.edit');
+    Route::post('/update/{id}','App\Http\Controllers\Dashboard\BlogsController@update')->name('blogs.update');
+    Route::get('/delete/{id}','App\Http\Controllers\Dashboard\BlogsController@delete')->name('blogs.delete');
+});
+
 });

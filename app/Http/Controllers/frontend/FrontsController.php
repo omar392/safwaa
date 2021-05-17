@@ -4,6 +4,7 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Aboutus;
+use App\Models\Blog;
 use App\Models\Email;
 use App\Models\Galery;
 use App\Models\Member;
@@ -32,6 +33,7 @@ class FrontsController extends Controller
     }
     public function blog(){
         $data['emails'] = Email::first();
+        $data['blogs'] = Blog::all();
         return view('frontend.singlepages.blog',$data);
     }
     public function contactus(){

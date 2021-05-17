@@ -70,6 +70,12 @@
                     <li><a href="{{route('aboutus.add')}}">إضافة عمل جديد</a></li>
                 </ul>
             </li>
+            <li><span class="glyphicon glyphicon-picture"></span><a href="">مدونة الصفوة</a>
+                <ul class="drop_main_menu">
+                    <li><a href="{{route('blogs.view')}}">عرض المدونة</a></li>
+                    <li><a href="{{route('blogs.add')}}">إضافة تدوينة جديد</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>
