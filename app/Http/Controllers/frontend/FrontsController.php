@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
+use App\Models\Aboutus;
 use App\Models\Email;
 use App\Models\Galery;
 use App\Models\Member;
@@ -21,6 +22,7 @@ class FrontsController extends Controller
     }
     public function aboutus(){
         $data['emails'] = Email::first();
+        $data['aboutus'] = Aboutus::all();
         return view('frontend.singlepages.aboutus',$data);
     }
     public function services(){
