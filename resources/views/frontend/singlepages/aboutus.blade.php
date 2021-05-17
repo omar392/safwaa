@@ -21,18 +21,20 @@
         <div class="container">
         <div class="section-title text-center">
         <h2>We Are Top Lawyers With <span> 25 Years</span> Of Experience</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi.</p>
+        <p>Lore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris </p>
         </div>
         <div class="row">
-            
+            @foreach ($aboutus as $about)
+          
         <div class="col-lg-6">
           <div class="choose-card">
         <i class="las la-balance-scale"></i>
-        <h3>Free Consulting</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+        <h3>{{$about->name_ar}}</h3>
+        <p>{{$about->title_ar}}</p>
         </div>
         </div>
-
+      
+             @endforeach
         </div>
         </div>
         </div>
