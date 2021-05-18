@@ -15,7 +15,7 @@
         <!--/End system bath-->
         <div class="page_content">
             <h1 class="heading_title">عرض كل العملاء والموكلين</h1>
-
+            @include('dashboard.layouts.flash-message')
             <div class="wrap">
                 <table class="table table-bordered">
                     <tr>

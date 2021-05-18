@@ -12,13 +12,13 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاسم العميل بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" value="{{$edit_data->name_ar}}">
+                    <input type="text" name="name_ar" class="form-control" id="input0" value="{{$edit_data->name_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Customer Name En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0" value="{{$edit_data->name_en}}">
+                    <input type="text"  name="name_en" class="form-control" id="input0" value="{{$edit_data->name_en}}" required >
                 </div>
             </div>
             <div class="form-group">

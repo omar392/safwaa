@@ -12,13 +12,13 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاسم العميل بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الاسم بالعربية">
+                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الاسم بالعربية" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Customer Name En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Name In English">
+                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Name In English" required >
                 </div>
             </div>
             <div class="form-group">

@@ -28,7 +28,7 @@ class SocialmediaController extends Controller
         $data->youtube = $request->youtube;
 
         $data->save();
-        return redirect()->route('social.view');
+        return redirect()->route('social.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -44,12 +44,12 @@ class SocialmediaController extends Controller
         $data->inestgram = $request->inestgram;
         $data->youtube = $request->youtube;
         $data->save();
-        return redirect()->route('social.view');
+        return redirect()->route('social.view')->with('success','تم التعديل بنجاح ');
     }
 
     public function delete($id){
         $data = Email::find($id);
         $data->delete();
-        return redirect()->route('social.view');
+        return redirect()->route('social.view')->with('error','تم الحذف بنجاح ');
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\frontend;
 use App\Http\Controllers\Controller;
 use App\Models\Aboutus;
 use App\Models\Blog;
+use App\Models\Contact;
 use App\Models\Email;
 use App\Models\Galery;
 use App\Models\Member;
@@ -36,10 +37,24 @@ class FrontsController extends Controller
         $data['blogs'] = Blog::all();
         return view('frontend.singlepages.blog',$data);
     }
+
+    //contact us is a special case
     public function contactus(){
         $data['emails'] = Email::first();
         return view('frontend.singlepages.contactus',$data);
     }
+    public function storecontactus(Request $request){
+        $data = new Contact();
+        $data->name = $request->name;
+        $data->email = $request->email;
+        $data->phone = $request->phone;
+        $data->subject = $request->subject;
+        $data->message = $request->message;
+        $data->save();
+        
+        return redirect()->route('fronts.contactus')->with('success','تم الإرسال بنجاح شكرا جزيلا لك سوف يصلك الرد قريبا');
+    }
+    // end contactus 
     public function gallery(){
         $data['emails'] = Email::first();
         $data['galeries'] = Galery::all();

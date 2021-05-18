@@ -1,5 +1,5 @@
 @extends('dashboard.layouts.master')
-@section('pageTitle', 'معرض الصفوة')
+@section('pageTitle', 'الرسائل الواردة')
 @section('content')
  <!--Start Main content container-->
  <div class="main_content_container">
@@ -8,29 +8,35 @@
         <div class="home_pass hidden-xs">
             <ul>
                 <li class="bring_right"><span class="glyphicon glyphicon-home "></span></li>
-                <li class="bring_right"><a href="">معرض الصفوة</a></li>
-                <li class="bring_right"><a href="">عرض معرض الصفوة</a></li>
+                <li class="bring_right"><a href="">الرسائل والاستفسارات الواردة</a></li>
+                <li class="bring_right"><a href="">عرض الرسائل  الواردة</a></li>
             </ul>
         </div>
         <!--/End system bath-->
         <div class="page_content">
-            <h1 class="heading_title">عرض كل صور المعرض </h1>
+            <h1 class="heading_title">عرض الواردة التى نرد عليها</h1>
             @include('dashboard.layouts.flash-message')
             <div class="wrap">
                 <table class="table table-bordered">
                     <tr>
                         <td>#</td>
-                        <td>صور الصفوة</td>
+                        <td>الاسم</td>
+                        <td>الايميل</td>
+                        <td>رقم الهاتف</td>
+                        <td>عنوان الرسالة</td>
+                        <td>محتوى الرسالة</td>
                         <td>التحكم</td>
                     </tr>
-                    @foreach ($all_data as $key=>$galeries)
+                    @foreach ($all_data as $key=>$contactus)
                     <tr>
                         <td>{{$key+1}}</td>
-                        <td><img src="{{(!empty($galeries->image))?url('upload/slider_images/'.$galeries->image):url('upload/no_image.jfif')}}" width="120px" height="130px" alt="image"></td>
+                        <td>{{$contactus->name}}</td>
+                        <td>{{$contactus->email}}</td>
+                        <td>{{$contactus->phone}}</td>
+                        <td>{{$contactus->subject}}</td>
+                        <td>{{$contactus->message}}</td>
                         <td>
-                            <a href="{{route('galeries.edit',$galeries->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
-                               data-placement="top" title="تعديل"></a>
-                            <a href="{{route('galeries.delete',$galeries->id)}}" class="glyphicon glyphicon-remove" data-toggle="tooltip"
+                            <a href="{{route('contactus.delete',$contactus->id)}}" class="glyphicon glyphicon-remove" data-toggle="tooltip"
                                data-placement="top" title="حذف"></a>
                         </td>
                     </tr>

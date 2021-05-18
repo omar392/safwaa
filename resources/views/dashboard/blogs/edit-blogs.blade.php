@@ -19,25 +19,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">العنوان بالعربية</label>
-                    <input type="text" name="title_ar" class="form-control" id="input0" value="{{$edit_data->title_ar}}">
+                    <input type="text" name="title_ar" class="form-control" id="input0" value="{{$edit_data->title_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Title En </label>
-                    <input type="text"  name="title_en" class="form-control" id="input0" value="{{$edit_data->title_en}}">
+                    <input type="text"  name="title_en" class="form-control" id="input0" value="{{$edit_data->title_en}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الموضوع بالعربية</label>
-                    <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10">{{$edit_data->subject_ar}}</textarea>
+                    <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->subject_ar}}</textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Subject Description</label>
-                    <textarea name="subject_en" class="form-control" id="" cols="160" rows="10">{{$edit_data->subject_en}}</textarea>
+                    <textarea name="subject_en" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->subject_en}}</textarea>
 
                 </div>
             </div>

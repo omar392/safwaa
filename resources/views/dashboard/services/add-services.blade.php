@@ -12,25 +12,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">اسم الخدمة بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الخدمة بالعربية ">
+                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الخدمة بالعربية " required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Services En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Service In English">
+                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Service In English" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف الخدمة بالعربية </label>
-                    <textarea name="description_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل وصف الخدمة بالعربية"></textarea>
+                    <textarea name="description_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل وصف الخدمة بالعربية" required ></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Enter Service Description In English</label>
-                    <textarea name="description_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Service Description In English"></textarea>
+                    <textarea name="description_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Service Description In English" required ></textarea>
                 </div>
             </div>
             <div class="form-group">

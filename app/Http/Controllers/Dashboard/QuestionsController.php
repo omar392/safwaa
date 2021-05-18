@@ -25,7 +25,7 @@ class QuestionsController extends Controller
         $data->answer_en = $request->answer_en;
 
         $data->save();
-        return redirect()->route('questions.view');
+        return redirect()->route('questions.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class QuestionsController extends Controller
         $data->answer_ar = $request->answer_ar;
         $data->answer_en = $request->answer_en;
         $data->save();
-        return redirect()->route('questions.view');
+        return redirect()->route('questions.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Question::find($id);
         $data->delete();
-        return redirect()->route('questions.view');
+        return redirect()->route('questions.view')->with('error','تم الحذف بنجاح ');
     }
 }

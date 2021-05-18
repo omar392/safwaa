@@ -76,6 +76,11 @@
                     <li><a href="{{route('blogs.add')}}">إضافة تدوينة جديد</a></li>
                 </ul>
             </li>
+            <li><span class="glyphicon glyphicon-picture"></span><a href="">الرسائل الواردة من على الموقع</a>
+                <ul class="drop_main_menu">
+                    <li><a href="{{route('contactus.view')}}">عرض الرسائل الواردة</a></li>
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

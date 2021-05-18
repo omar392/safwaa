@@ -27,7 +27,7 @@ class GaleryController extends Controller
             $data['image']=$filename;
         }
         $data->save();
-        return redirect()->route('galeries.view');
+        return redirect()->route('galeries.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -45,11 +45,11 @@ class GaleryController extends Controller
             $data['image']=$filename;
         }
         $data->save();
-        return redirect()->route('galeries.view');
+        return redirect()->route('galeries.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Galery::find($id);
         $data->delete();
-        return redirect()->route('galeries.view');
+        return redirect()->route('galeries.view')->with('error','تم الحذف بنجاح ');
     }
 }

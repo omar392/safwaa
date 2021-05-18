@@ -11,19 +11,19 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">السؤال بالعربية</label>
-                    <input type="text" name="question_ar" class="form-control" id="input0" value="{{$edit_data->question_ar}}">
+                    <input type="text" name="question_ar" class="form-control" id="input0" value="{{$edit_data->question_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Question En </label>
-                    <input type="text"  name="question_en" class="form-control" id="input0" value="{{$edit_data->question_en}}">
+                    <input type="text"  name="question_en" class="form-control" id="input0" value="{{$edit_data->question_en}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاجابة بالعربية</label>
-                    <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10">{{$edit_data->answer_ar}}</textarea>
+                    <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->answer_ar}}</textarea>
                 </div>
             </div>
             <div class="form-group">

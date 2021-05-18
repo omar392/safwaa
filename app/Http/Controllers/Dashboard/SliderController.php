@@ -30,7 +30,7 @@ class SliderController extends Controller
             $data['image']=$filename;
         }
         $data->save();
-        return redirect()->route('sliders.view');
+        return redirect()->route('sliders.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -51,11 +51,11 @@ class SliderController extends Controller
             $data['image']=$filename;
         }
         $data->save();
-        return redirect()->route('sliders.view');
+        return redirect()->route('sliders.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Slider::find($id);
         $data->delete();
-        return redirect()->route('sliders.view');
+        return redirect()->route('sliders.view')->with('error','تم الحذف بنجاح ');
     }
 }
