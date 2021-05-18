@@ -18,7 +18,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('frontend/font-awesome/css/font-awesome.min.css')}}">
-
+<style>
+    .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+</style>
     <title> الصفوة للمحاماة</title>
 </head>
 <body>

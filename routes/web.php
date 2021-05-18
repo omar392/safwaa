@@ -12,19 +12,12 @@ use Illuminate\Support\Facades\Route;
 | contains the "web" middleware group. Now create something great!
 |
 */
-/*
+
 
 Route::group(['prefix' => LaravelLocalization::setLocale(),
 'middleware' => [ 'localeSessionRedirect', 'localizationRedirect', 'localeViewPath' ]],function(){
     
 // for frontend multi language
-
-
-});
-*/
-// Route::get('/', function () {
-//     return view('welcome');
-// });
 Route::get('/','App\Http\Controllers\frontend\FrontsController@index')->name('fronts.index');
 Route::get('/aboutus','App\Http\Controllers\frontend\FrontsController@aboutus')->name('fronts.aboutus');
 Route::get('/services','App\Http\Controllers\frontend\FrontsController@services')->name('fronts.services');
@@ -34,6 +27,14 @@ Route::get('/questions','App\Http\Controllers\frontend\FrontsController@question
 Route::get('/team','App\Http\Controllers\frontend\FrontsController@team')->name('fronts.team');
 Route::get('/contactus','App\Http\Controllers\frontend\FrontsController@contactus')->name('fronts.contactus');//view
 Route::post('/contactus/store','App\Http\Controllers\frontend\FrontsController@storecontactus')->name('fronts.contactus.store');//store
+
+
+});
+
+// Route::get('/', function () {
+//     return view('welcome');
+// });
+
 
 
 Auth::routes();

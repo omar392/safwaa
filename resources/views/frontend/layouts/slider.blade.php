@@ -34,4 +34,23 @@
             </div>
         </div>
     </div>
+    <div class="hero-slider-item item-bg3">
+        <div class="d-table">
+            <div class="d-table-cell">
+                <div class="container">
+                    <div class="slider-content">
+                        <span>الطريقة الصحيحة</span>
+                        <h1>نحن نقودك لتحقيق أحلامك</h1>
+                        <p>عن طريق المتابعة الجيدة لحظة بلحظة عن طريق المتابعة الجيدة لحظة بلحظة عن طريق المتابعة
+                            الجيدة لحظة بلحظة عن طريق المتابعة الجيدة لحظة بلحظة عن طريق المتابعة الجيدة لحظة بلحظة
+                            عن طريق المتابعة الجيدة لحظة بلحظة </p>
+                        <div class="slider-btn">
+                            <a href="#" class="default-btn-one">إستشارة مجانية</a>
+                            <a href="#" class="default-btn-two mr-3">تعرف على المزيد</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </div>

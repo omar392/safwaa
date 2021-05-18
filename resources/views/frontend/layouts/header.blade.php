@@ -41,9 +41,11 @@
                                 <i class="las la-sms"></i>
                             </a>
                         </li>
+                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
                         <li class="heder-btn">
-                            <a href="#">English</a>
+                            <a href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">{{ $properties['native'] }}</a>
                         </li>
+                        @endforeach
                     </ul>
                 </div>
             </div>
@@ -71,43 +73,43 @@
                         <ul class="navbar-nav mr-auto">
                             <li class="nav-item">
                                 <a href="{{route('fronts.index')}}" class="nav-link active">
-                                    الرئيسية 
+                                    {{__('messages.Home')}} 
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="{{route('fronts.aboutus')}}" class="nav-link">
-                                    من نحن
+                                    {{__('messages.About Us')}}
                                 </a>
                             </li>
                             <li class="nav-item">
                                 <a href="#" class="nav-link">
-                                    الوصول السريع <i class="las la-angle-down"></i>
+                                    {{__('messages.Fast Pages')}}  <i class="las la-angle-down"></i>
                                 </a>
                                 <ul class="dropdown-menu">
                                     <li class="nav-item">
-                                        <a href="{{route('fronts.team')}}" class="nav-link">فريق العمل</a>
+                                        <a href="{{route('fronts.team')}}" class="nav-link">{{__('messages.Our Team')}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{route('fronts.gallery')}}" class="nav-link">معرض الصفوة</a>
+                                        <a href="{{route('fronts.gallery')}}" class="nav-link">{{__('messages.Gallery')}}</a>
                                     </li>
                                     <li class="nav-item">
-                                        <a href="{{route('fronts.questions')}}" class="nav-link">الاسئلة الاكثر شيوعا</a>
+                                        <a href="{{route('fronts.questions')}}" class="nav-link">{{__('messages.Famous Questions')}}</a>
                                     </li>
                                 </ul>
                             </li>
                             <li class="nav-item">
                                 <a href="{{route('fronts.services')}}" class="nav-link">
-                                    خدماتنا 
+                                    {{__('messages.Services')}} 
                                 </a>
                             </li>
                             
                             <li class="nav-item">
                                 <a href="{{route('fronts.blog')}}" class="nav-link">
-                                أرشيف أعمال الصفوة 
+                                    {{__('messages.Blog')}}
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a href="{{route('fronts.contactus')}}" class="nav-link">تواصل معنا</a>
+                                <a href="{{route('fronts.contactus')}}" class="nav-link">{{__('messages.Contact Us')}}</a>
                             </li>
                             
                             <li class="nav-item">

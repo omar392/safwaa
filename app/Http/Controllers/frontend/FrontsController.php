@@ -19,7 +19,8 @@ class FrontsController extends Controller
 {
     public function index(){
         $data['emails'] = Email::first();
-        $data['sliders'] = Slider::first();
+        $data['sliders'] = Slider::all();
+        $data['services'] = Service::all();
         return view('frontend.layouts.home',$data);
     }
     public function aboutus(){
@@ -38,7 +39,7 @@ class FrontsController extends Controller
         return view('frontend.singlepages.blog',$data);
     }
 
-    //contact us is a special case
+    //contact us is a special case #######
     public function contactus(){
         $data['emails'] = Email::first();
         return view('frontend.singlepages.contactus',$data);
@@ -54,7 +55,8 @@ class FrontsController extends Controller
         
         return redirect()->route('fronts.contactus')->with('success','تم الإرسال بنجاح شكرا جزيلا لك سوف يصلك الرد قريبا');
     }
-    // end contactus 
+    // end contactus ##################
+
     public function gallery(){
         $data['emails'] = Email::first();
         $data['galeries'] = Galery::all();

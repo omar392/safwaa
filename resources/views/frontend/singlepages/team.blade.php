@@ -13,10 +13,10 @@
     <div class="d-table-cell">
     <div class="container">
     <div class="page-content">
-    <h2>Team</h2>
+    <h2>{{__('messages.Our Team')}}</h2>
     <ul>
-    <li><a href="index.html">Home <i class="las la-angle-right"></i></a></li>
-    <li>Team</li>
+    <li><a href="index.html">{{__('messages.Home')}} <i class="las la-angle-right"></i></a></li>
+    <li>{{__('messages.Our Team')}}</li>
     </ul>
     </div>
     </div>
@@ -28,8 +28,7 @@
     <div class="attorney-area ptb-100">
     <div class="container">
     <div class="section-title">
-    <span>Experienced Team</span>
-    <h2>Our Experienced Attorney Are Ready To answer any questions</h2>
+    <span>{{__('messages.Our Team')}} </span>
     </div>
     <div class="row">
 
@@ -50,7 +49,6 @@
     </div>
     </div>
     
-   
     </div>
     </div>
     </div>

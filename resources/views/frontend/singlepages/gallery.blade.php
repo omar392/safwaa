@@ -5,10 +5,10 @@
     <div class="d-table-cell">
     <div class="container">
     <div class="page-content">
-    <h2>Gallery</h2>
+    <h2>{{__('messages.Gallery')}} </h2>
     <ul>
-    <li><a href="index.html">Home <i class="las la-angle-right"></i></a></li>
-    <li>Gallery</li>
+    <li><a href="#">{{__('messages.Home')}} <i class="las la-angle-right"></i></a></li>
+    <li>{{__('messages.Gallery')}} </li>
     </ul>
     </div>
     </div>
@@ -20,7 +20,7 @@
     <div class="gallery-area pt-100 pb-70">
     <div class="container">
     <div class="section-title">
-    <h2>Gallery Images</h2>
+    <h2>{{__('messages.Gallery')}}</h2>
     </div>
     <div class="row">
    @foreach ($galeries as $galery)

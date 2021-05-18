@@ -6,10 +6,10 @@
     <div class="d-table-cell">
     <div class="container">
     <div class="page-content">
-    <h2>Services</h2>
+    <h2>{{__('messages.Services')}} </h2>
     <ul>
-    <li><a href="index.html">Home <i class="las la-angle-right"></i></a></li>
-    <li>Services</li>
+    <li><a href="index.html">{{__('messages.Home')}} <i class="las la-angle-right"></i></a></li>
+    <li>{{__('messages.Services')}} </li>
     </ul>
     </div>
     </div>
@@ -21,8 +21,8 @@
     <div class="our-service-area pt-100 pb-70">
     <div class="container">
     <div class="section-title">
-    <span>Our Services</span>
-    <h2>We Are Providing <span> Top Services</span> With Excellent Performance</h2>
+    <span>{{__('messages.Services')}} </span>
+    <h2>{{__('messages.Services Performance')}} </h2>
     </div>
     <div class="row">
 @foreach ($services as $service)
