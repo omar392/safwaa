@@ -5,10 +5,10 @@
     <div class="d-table-cell">
     <div class="container">
     <div class="page-content">
-    <h2>Blog</h2>
+    <h2>{{__('messages.Blog')}} </h2>
     <ul>
-    <li><a href="index.html">Home <i class="las la-angle-right"></i></a></li>
-    <li>Blog</li>
+    <li><a href="index.html">{{__('messages.Home')}}  <i class="las la-angle-right"></i></a></li>
+    <li>{{__('messages.Blog')}} </li>
     </ul>
     </div>
     </div>

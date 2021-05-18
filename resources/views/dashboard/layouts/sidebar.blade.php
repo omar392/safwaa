@@ -52,31 +52,31 @@
                     <li><a href="{{route('sliders.add')}}">إضافة شريحة </a></li>
                 </ul>
             </li>
-            <li><span class="glyphicon glyphicon-picture"></span><a href="">معرض الصفوة</a>
+            <li><span class="glyphicon glyphicon-film"></span><a href="">معرض الصفوة</a>
                 <ul class="drop_main_menu">
                     <li><a href="{{route('galeries.view')}}">عرض صور المعرض </a></li>
                     <li><a href="{{route('galeries.add')}}">إضافة صور جديدة للمعرض </a></li>
                 </ul>
             </li>
-            <li><span class="glyphicon glyphicon-picture"></span><a href="">سؤال وجواب (الاسئلة الشائعة)</a>
+            <li><span class="glyphicon glyphicon-transfer"></span><a href="">سؤال وجواب (الاسئلة الشائعة)</a>
                 <ul class="drop_main_menu">
                     <li><a href="{{route('questions.view')}}">عرض الاسئلة و أجوبتها </a></li>
                     <li><a href="{{route('questions.add')}}">إضافة سؤال وجواب</a></li>
                 </ul>
             </li>
-            <li><span class="glyphicon glyphicon-picture"></span><a href="">أعمال الصفوة</a>
+            <li><span class="glyphicon glyphicon-tasks"></span><a href="">أعمال الصفوة</a>
                 <ul class="drop_main_menu">
                     <li><a href="{{route('aboutus.view')}}">عرض أعمال</a></li>
                     <li><a href="{{route('aboutus.add')}}">إضافة عمل جديد</a></li>
                 </ul>
             </li>
-            <li><span class="glyphicon glyphicon-picture"></span><a href="">مدونة الصفوة</a>
+            <li><span class="	glyphicon glyphicon-book"></span><a href="">مدونة الصفوة</a>
                 <ul class="drop_main_menu">
                     <li><a href="{{route('blogs.view')}}">عرض المدونة</a></li>
                     <li><a href="{{route('blogs.add')}}">إضافة تدوينة جديد</a></li>
                 </ul>
             </li>
-            <li><span class="glyphicon glyphicon-picture"></span><a href="">الرسائل الواردة من على الموقع</a>
+            <li><span class="glyphicon glyphicon-envelope"></span><a href="">الرسائل الواردة من على الموقع</a>
                 <ul class="drop_main_menu">
                     <li><a href="{{route('contactus.view')}}">عرض الرسائل الواردة</a></li>
                 </ul>

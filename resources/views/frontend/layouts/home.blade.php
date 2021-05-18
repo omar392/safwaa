@@ -251,7 +251,7 @@
 <div class="testimonials-area case-study-area ptb-100">
     <div class="container">
         <div class="section-title text-center">
-            <span>تحت الدراسة</span>
+            <span>أخر الاخبار</span>
             <h2>نحن نوفر لك <span>خدمة متميزة </span> بأداء عالى</h2>
         </div>
         <div class="testimonials-slider owl-carousel owl-theme">

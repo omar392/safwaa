@@ -1,14 +1,13 @@
 <footer class="footer-area pt-100 pb-70">
     <div class="container">
         <div class="row">
-            <div class="col-lg-5 col-sm-6">
+            <div class="col-lg-5 col-sm-3">
                 <div class="footer-widget">
                     <div class="logo">
-                        <img src="{{asset('frontend/img/logo-white.png')}}" alt="logo">
+                        <img src="{{asset('frontend/img/favicon.png')}}"  alt="logo">
                     </div>
-                    <p>الصفوة للمحامات مكتب محامة متميز هذا النص تجريبى هذا النص تجريبى هذا النص تجريبى هذا النص
-                        تجريبى هذا النص تجريبى هذا النص تجريبى هذا النص تجريبى هذا النص تجريبى هذا النص تجريبى هذا
-                        النص تجريبى هذا النص تجريبى</p>
+                    <h3>{{__('messages.Safwa')}}</h3>
+                    <p>{{__('messages.Safwa Defention')}}</p>
                     <ul class="footer-socials">
                         <li>
                             <a href="https://{{$emails->facebook}}" target="_blank">
@@ -33,56 +32,62 @@
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-6">
+            <div class="col-lg-2 col-sm-3">
                 <div class="footer-widget">
-                    <h3>الوصول السريع</h3>
+                    <h3>{{__('messages.Fast Pages')}}</h3>
                     <ul class="footer-text">
                         <li>
-                            <a href="index.html">
+                            <a href="{{route('fronts.index')}}">
                                 <i class="las la-star"></i>
-                                الصفحة الرئيسية
+                                {{__('messages.Home')}} 
                             </a>
                         </li>
                         <li>
-                            <a href="about.html">
+                            <a href="{{route('fronts.aboutus')}}">
                                 <i class="las la-star"></i>
-                                عن المكتب
+                                {{__('messages.About Us')}}
                             </a>
                         </li>
                         <li>
-                            <a href="services.html">
+                            <a href="{{route('fronts.services')}}">
                                 <i class="las la-star"></i>
-                                خدماتنا
+                                {{__('messages.Services')}} 
                             </a>
                         </li>
                         <li>
-                            <a href="case-study.html">
+                            <a href="{{route('fronts.blog')}}">
                                 <i class="las la-star"></i>
-                                دراسات القضايا
+                                {{__('messages.Blog')}}
                             </a>
                         </li>
                         <li>
-                            <a href="blog.html">
+                            <a href="{{route('fronts.contactus')}}">
                                 <i class="las la-star"></i>
-                                المدونه الخاصه بنا
+                                {{__('messages.Contact Us')}}
                             </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a href="{{route('fronts.team')}}">
                                 <i class="las la-star"></i>
-                                اراء العملاء
+                                {{__('messages.Our Team')}} 
                             </a>
                         </li>
                         <li>
-                            <a href="attorney.html">
+                            <a href="{{route('fronts.gallery')}}">
                                 <i class="las la-star"></i>
-                                أعضاء فريق العمل
+                                {{__('messages.Gallery')}}
+                            </a>
+                        </li>
+                        <li>
+                            <a href="{{route('fronts.questions')}}">
+                                <i class="las la-star"></i>
+                                {{__('messages.Famous Questions')}}
                             </a>
                         </li>
                     </ul>
                 </div>
             </div>
-            <div class="col-lg-2 col-sm-6">
+            {{-- <div class="col-lg-2 col-sm-6">
                 <div class="footer-widget pl-50">
                     <h3>الخدمات</h3>
                     <ul class="footer-text">
@@ -130,10 +135,10 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-            <div class="col-lg-3 col-sm-6">
+            </div> --}}
+            <div class="col-lg-3 col-sm-3">
                 <div class="footer-widget">
-                    <h3>معلومات الاتصال</h3>
+                    <h3>{{__('messages.Contacts')}}</h3>
                     <ul class="info-list">
                         <li>
                             <i class="las la-phone"></i>
@@ -150,7 +155,7 @@
                             <a href="https://www.google.com/maps/dir/31.0759904,31.4798942/30.0550448,31.3468266/@30.5611103,31.9370336,9z/data=!3m1!4b1!4m4!4m3!1m1!4e1!1m0" target="_blank">
                                 <i class="las la-map-marker-alt"></i>
                             </a>
-                         54 شارع مصطفى النحاس تقاطع مكرم عبيد - مدينة نصر - القاهرة
+                            {{__('messages.Address')}}
                         </li>
                     </ul>
                 </div>
