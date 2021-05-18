@@ -11,25 +11,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الخبر بالعربية</label>
-                    <input type="text" name="new_title_ar" class="form-control" id="input0" value="{{$edit_data->new_title_ar}}">
+                    <input type="text" name="new_title_ar" class="form-control" id="input0" value="{{$edit_data->new_title_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">News En </label>
-                    <input type="text"  name="new_title_en" class="form-control" id="input0" value="{{$edit_data->new_title_en}}">
+                    <input type="text"  name="new_title_en" class="form-control" id="input0" value="{{$edit_data->new_title_en}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف الخدمة</label>
-                    <textarea name="new_description_ar" class="form-control" id="" cols="160" rows="10">{{$edit_data->new_description_ar}}</textarea>
+                    <textarea name="new_description_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->new_description_ar}}</textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Services Description</label>
-                    <textarea name="new_description_en" class="form-control" id="" cols="160" rows="10">{{$edit_data->new_description_en}}</textarea>
+                    <textarea name="new_description_en" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->new_description_en}}</textarea>
 
                 </div>
             </div>

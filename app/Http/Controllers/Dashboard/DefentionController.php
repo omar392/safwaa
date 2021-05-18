@@ -25,7 +25,7 @@ class DefentionController extends Controller
         $data->message_en = $request->message_en;
 
         $data->save();
-        return redirect()->route('goals.view');
+        return redirect()->route('goals.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class DefentionController extends Controller
         $data->message_ar = $request->message_ar;
         $data->message_en = $request->message_en;
         $data->save();
-        return redirect()->route('goals.view');
+        return redirect()->route('goals.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Goal::find($id);
         $data->delete();
-        return redirect()->route('goals.view');
+        return redirect()->route('goals.view')->with('error','تم الحذف بنجاح ');
     }
 }

@@ -18,13 +18,13 @@
                 </div>
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الوصف بالعربية</label>
-                    <input type="text" name="short_title" class="form-control" id="input0" value="{{$edit_data->short_title}}">
+                    <input type="text" name="short_title" class="form-control" id="input0" value="{{$edit_data->short_title}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Description In English </label>
-                    <input type="text"  name="long_title" class="form-control" id="input0" value="{{$edit_data->long_title}}">
+                    <input type="text"  name="long_title" class="form-control" id="input0" value="{{$edit_data->long_title}}" required >
                 </div>
             </div>
             <div class="form-group">

@@ -29,11 +29,11 @@ Route::get('/','App\Http\Controllers\frontend\FrontsController@index')->name('fr
 Route::get('/aboutus','App\Http\Controllers\frontend\FrontsController@aboutus')->name('fronts.aboutus');
 Route::get('/services','App\Http\Controllers\frontend\FrontsController@services')->name('fronts.services');
 Route::get('/blog','App\Http\Controllers\frontend\FrontsController@blog')->name('fronts.blog');
-Route::get('/contactus','App\Http\Controllers\frontend\FrontsController@contactus')->name('fronts.contactus');
 Route::get('/gallery','App\Http\Controllers\frontend\FrontsController@gallery')->name('fronts.gallery');
 Route::get('/questions','App\Http\Controllers\frontend\FrontsController@questions')->name('fronts.questions');
 Route::get('/team','App\Http\Controllers\frontend\FrontsController@team')->name('fronts.team');
-
+Route::get('/contactus','App\Http\Controllers\frontend\FrontsController@contactus')->name('fronts.contactus');//view
+Route::post('/contactus/store','App\Http\Controllers\frontend\FrontsController@storecontactus')->name('fronts.contactus.store');//store
 
 
 Auth::routes();
@@ -158,6 +158,12 @@ Route::prefix('blogs')->group(function(){
     Route::get('/edit/{id}','App\Http\Controllers\Dashboard\BlogsController@edit')->name('blogs.edit');
     Route::post('/update/{id}','App\Http\Controllers\Dashboard\BlogsController@update')->name('blogs.update');
     Route::get('/delete/{id}','App\Http\Controllers\Dashboard\BlogsController@delete')->name('blogs.delete');
+});
+
+//income from contactus
+Route::prefix('message_income')->group(function(){
+    Route::get('/view','App\Http\Controllers\Dashboard\ContactusController@view')->name('contactus.view');
+    Route::get('/delete/{id}','App\Http\Controllers\Dashboard\ContactusController@delete')->name('contactus.delete');
 });
 
 });

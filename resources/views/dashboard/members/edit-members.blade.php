@@ -17,25 +17,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاسم بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" value="{{$edit_data->name_ar}}">
+                    <input type="text" name="name_ar" class="form-control" id="input0" value="{{$edit_data->name_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Name En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0"value="{{$edit_data->name_en}}">
+                    <input type="text"  name="name_en" class="form-control" id="input0"value="{{$edit_data->name_en}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">درجة المحامى بالعربية</label>
-                    <input type="text"  name="degree_ar" class="form-control" id="input0" placeholder="أدخل درجة المحامى"value="{{$edit_data->degree_ar}}">
+                    <input type="text"  name="degree_ar" class="form-control" id="input0" placeholder="أدخل درجة المحامى"value="{{$edit_data->degree_ar}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Lower Degree</label>
-                    <input type="text" name="degree_en" class="form-control" id="input0" placeholder="Enter Lower Degree In English" value="{{$edit_data->degree_en}}">
+                    <input type="text" name="degree_en" class="form-control" id="input0" placeholder="Enter Lower Degree In English" value="{{$edit_data->degree_en}}" required >
                 </div>
             </div>
             <div class="form-group">

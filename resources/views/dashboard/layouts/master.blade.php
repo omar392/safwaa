@@ -61,7 +61,7 @@
         <!--Start Side bar main menu-->
         @include('dashboard.layouts.sidebar')
         <!--/End side bar main menu-->
-        @include('dashboard.layouts.flash-message')
+        {{-- @include('dashboard.layouts.flash-message') --}}
 
           <!--Start Main content container-->
         @yield('content')

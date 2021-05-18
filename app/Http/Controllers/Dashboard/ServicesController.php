@@ -25,7 +25,7 @@ class ServicesController extends Controller
         $data->description_en = $request->description_en;
 
         $data->save();
-        return redirect()->route('services.view');
+        return redirect()->route('services.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class ServicesController extends Controller
         $data->description_ar = $request->description_ar;
         $data->description_en = $request->description_en;
         $data->save();
-        return redirect()->route('services.view');
+        return redirect()->route('services.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Service::find($id);
         $data->delete();
-        return redirect()->route('services.view');
+        return redirect()->route('services.view')->with('error','تم الحذف بنجاح ');
     }
 }

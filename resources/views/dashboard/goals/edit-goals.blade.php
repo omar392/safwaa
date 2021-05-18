@@ -11,26 +11,26 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text"> الرؤية بالعربية</label>
-                    <textarea name="goal_ar" class="form-control" id="" cols="160" rows="10">{{$edit_data->goal_ar}}</textarea>
+                    <textarea name="goal_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->goal_ar}}</textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Message English</label>
-                    <textarea name="goal_en" class="form-control" id="" cols="160" rows="10">{{$edit_data->goal_en}}</textarea>
+                    <textarea name="goal_en" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->goal_en}}</textarea>
 
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text"> الرسالة بالعربية</label>
-                    <textarea name="message_ar" class="form-control" id="" cols="160" rows="10">{{$edit_data->message_ar}}</textarea>
+                    <textarea name="message_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->message_ar}}</textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Message English</label>
-                    <textarea name="message_en" class="form-control" id="" cols="160" rows="10">{{$edit_data->message_en}}</textarea>
+                    <textarea name="message_en" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->message_en}}</textarea>
 
                 </div>
             </div>

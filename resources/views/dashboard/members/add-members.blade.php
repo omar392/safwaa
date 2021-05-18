@@ -17,25 +17,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاسم بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الاسم بالعربية">
+                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل الاسم بالعربية" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Name En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Name In English">
+                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Name In English" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">درجة المحامى بالعربية</label>
-                    <input type="text"  name="degree_ar" class="form-control" id="input0" placeholder="أدخل درجة المحامى">
+                    <input type="text"  name="degree_ar" class="form-control" id="input0" placeholder="أدخل درجة المحامى" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Lower Degree</label>
-                    <input type="text" name="degree_en" class="form-control" id="input0" placeholder="Enter Lower Degree In English">
+                    <input type="text" name="degree_en" class="form-control" id="input0" placeholder="Enter Lower Degree In English" required >
                 </div>
             </div>
             <div class="form-group">

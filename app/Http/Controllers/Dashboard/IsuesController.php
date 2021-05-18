@@ -25,7 +25,7 @@ class IsuesController extends Controller
         $data->losed = $request->losed;
 
         $data->save();
-        return redirect()->route('isues.view');
+        return redirect()->route('isues.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class IsuesController extends Controller
         $data->studied = $request->studied;
         $data->losed = $request->losed;
         $data->save();
-        return redirect()->route('isues.view');
+        return redirect()->route('isues.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Isue::find($id);
         $data->delete();
-        return redirect()->route('isues.view');
+        return redirect()->route('isues.view')->with('error','تم الحذف بنجاح ');
     }
 }

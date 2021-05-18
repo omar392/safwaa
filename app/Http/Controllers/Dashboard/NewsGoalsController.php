@@ -25,7 +25,7 @@ class NewsGoalsController extends Controller
         $data->new_description_en = $request->new_description_en;
 
         $data->save();
-        return redirect()->route('news.view');
+        return redirect()->route('news.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class NewsGoalsController extends Controller
         $data->new_description_ar = $request->new_description_ar;
         $data->new_description_en = $request->new_description_en;
         $data->save();
-        return redirect()->route('news.view');
+        return redirect()->route('news.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Awareness::find($id);
         $data->delete();
-        return redirect()->route('news.view');
+        return redirect()->route('news.view')->with('error','تم الحذف بنجاح ');
     }
 }

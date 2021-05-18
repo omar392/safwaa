@@ -25,7 +25,7 @@ class AgentsController extends Controller
         $data->title_en = $request->title_en;
 
         $data->save();
-        return redirect()->route('aboutus.view');
+        return redirect()->route('aboutus.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -39,11 +39,11 @@ class AgentsController extends Controller
         $data->title_ar = $request->title_ar;
         $data->title_en = $request->title_en;
         $data->save();
-        return redirect()->route('aboutus.view');
+        return redirect()->route('aboutus.view')->with('success','تمت التعديل بنجاح ');
     }
     public function delete($id){
         $data = Aboutus::find($id);
         $data->delete();
-        return redirect()->route('aboutus.view');
+        return redirect()->route('aboutus.view')->with('error','تم الحذف بنجاح ');
     }
 }

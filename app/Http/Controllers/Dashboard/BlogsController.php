@@ -34,7 +34,7 @@ class BlogsController extends Controller
         $data->subject_en = $request->subject_en;
 
         $data->save();
-        return redirect()->route('blogs.view');
+        return redirect()->route('blogs.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -56,11 +56,11 @@ class BlogsController extends Controller
         $data->subject_ar = $request->subject_ar;
         $data->subject_en = $request->subject_en;
         $data->save();
-        return redirect()->route('blogs.view');
+        return redirect()->route('blogs.view')->with('success','تمت التعديل بنجاح ');
     }
     public function delete($id){
         $data = Blog::find($id);
         $data->delete();
-        return redirect()->route('blogs.view');
+        return redirect()->route('blogs.view')->with('error','تم الحذف بنجاح ');
     }
 }

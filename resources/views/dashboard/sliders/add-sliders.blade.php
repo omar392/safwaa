@@ -18,13 +18,13 @@
                 </div>
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف صغير بالعربية</label>
-                    <input type="text" name="short_title" class="form-control" id="input0" placeholder="أدخل الوصف بالعربية">
+                    <input type="text" name="short_title" class="form-control" id="input0" placeholder="أدخل الوصف بالعربية" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">description in English </label>
-                    <input type="text"  name="long_title" class="form-control" id="input0" placeholder="Enter The Description">
+                    <input type="text"  name="long_title" class="form-control" id="input0" placeholder="Enter The Description" required >
                 </div>
             </div>
             <div class="form-group">

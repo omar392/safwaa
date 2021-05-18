@@ -33,7 +33,7 @@ class CustomersConrtoller extends Controller
         }
 
         $data->save();
-        return redirect()->route('customers.view')->with('success','Item created successfully!');
+        return redirect()->route('customers.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -53,11 +53,11 @@ class CustomersConrtoller extends Controller
             $data['customer_logo']=$filename;
         }
         $data->save();
-        return redirect()->route('customers.view');
+        return redirect()->route('customers.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Customer ::find($id);
         $data->delete();
-        return redirect()->route('customers.view');
+        return redirect()->route('customers.view')->with('error','تم الحذف بنجاح ');
     }
 }

@@ -12,32 +12,32 @@
                 <div class="form-group">
                     <div class="col-sm-10">
                         <label for="input4" class="col-sm-2 control-label bring_right left_text">رفع الصورة</label>
-                        <input type="file" name="image" class="form-control" style="height: unset;" id="input4" multiple>
+                        <input type="file" name="image" class="form-control" style="height: unset;" id="input4" multiple >
                     </div>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">العنوان بالعربية</label>
-                    <input type="text" name="title_ar" class="form-control" id="input0" placeholder="أدخل العنوان بالعربية ">
+                    <input type="text" name="title_ar" class="form-control" id="input0" placeholder="أدخل العنوان بالعربية " required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Title In English</label>
-                    <input type="text"  name="title_en" class="form-control" id="input0" placeholder="Enter The Title In English">
+                    <input type="text"  name="title_en" class="form-control" id="input0" placeholder="Enter The Title In English" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف الخبر بالعربية </label>
-                    <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل موضوع المدونة بالعربية"></textarea>
+                    <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل موضوع المدونة بالعربية" required ></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Enter The New Description In English</label>
-                    <textarea name="subject_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Blog Subject In English"></textarea>
+                    <textarea name="subject_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Blog Subject In English" required ></textarea>
                 </div>
             </div>
             <div class="form-group">

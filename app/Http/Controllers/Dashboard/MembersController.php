@@ -32,7 +32,7 @@ class MembersController extends Controller
         $data->degree_en = $request->degree_en;
 
         $data->save();
-        return redirect()->route('members.view');
+        return redirect()->route('members.view')->with('success','تمت الاضافة بنجاح ');
     }
     public function edit($id){
 
@@ -54,11 +54,11 @@ class MembersController extends Controller
         $data->degree_ar = $request->degree_ar;
         $data->degree_en = $request->degree_en;
         $data->save();
-        return redirect()->route('members.view');
+        return redirect()->route('members.view')->with('success','تم التعديل بنجاح ');
     }
     public function delete($id){
         $data = Member::find($id);
         $data->delete();
-        return redirect()->route('members.view');
+        return redirect()->route('members.view')->with('error','تم الحذف بنجاح ');
     }
 }

@@ -12,25 +12,25 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">عنوان العمل بالعربية</label>
-                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل المهمة بالعربية ">
+                    <input type="text" name="name_ar" class="form-control" id="input0" placeholder="أدخل المهمة بالعربية" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Title Work En </label>
-                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Title In English">
+                    <input type="text"  name="name_en" class="form-control" id="input0" placeholder="Enter The Title In English" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف العمل بالعربية </label>
-                    <textarea name="title_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل وصف العمل بالعربية"></textarea>
+                    <textarea name="title_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل وصف العمل بالعربية" required ></textarea>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Enter Work Description In English</label>
-                    <textarea name="title_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Work Description In English"></textarea>
+                    <textarea name="title_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Work Description In English" required ></textarea>
                 </div>
             </div>
             <div class="form-group">

@@ -68,51 +68,53 @@
     <span>Contact Form</span>
     <h2>Get A Flexible Schedule</h2>
     </div>
+    @include('dashboard.layouts.flash-message')
     <div class="contact-form">
-    <form id="contactForm">
-    <div class="row">
-    <div class="col-md-6">
-    <div class="form-group">
-    <input type="text" name="name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Full name">
-    <div class="help-block with-errors"></div>
-    <i class="las la-user"></i>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="form-group">
-    <input type="email" name="email" class="form-control" id="email" required data-error="Please enter your email" placeholder="Email address">
-    <div class="help-block with-errors"></div>
-    <i class="las la-envelope"></i>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="form-group">
-    <input type="text" name="email" class="form-control" id="Phone" required data-error="Please enter your phone" placeholder="Phone No">
-    <div class="help-block with-errors"></div>
-    <i class="las la-phone"></i>
-    </div>
-    </div>
-    <div class="col-md-6">
-    <div class="form-group">
-    <input type="text" name="email" class="form-control" id="subject" required data-error="Please enter your subject" placeholder="Your subject">
-    <div class="help-block with-errors"></div>
-    <i class="las la-id-card"></i>
-    </div>
-    </div>
-    <div class="col-lg-12 col-md-12">
-    <div class="form-group">
-    <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Write your message..."></textarea>
-    <div class="help-block with-errors"></div>
-    <i class="las la-sms"></i>
-    </div>
-    </div>
-    <div class="col-lg-12 col-md-12">
-    <button type="submit" class="default-btn-one">Get An Appointment</button>
-    <div id="msgSubmit" class="h3 text-center hidden"></div>
-    <div class="clearfix"></div>
-    </div>
-    </div>
-    </form>
+        <form method="POST" action="{{route('fronts.contactus.store')}}" enctype="multipart/form-data">
+                @csrf
+        <div class="row">
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" name="name" class="form-control" id="name" required data-error="Please enter your name" placeholder="Full name">
+        <div class="help-block with-errors"></div>
+        <i class="las la-user"></i>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="email" name="email" class="form-control" id="email" required data-error="Please enter your email" placeholder="Email address">
+        <div class="help-block with-errors"></div>
+        <i class="las la-envelope"></i>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" name="phone" class="form-control" id="Phone" required data-error="Please enter your phone" placeholder="Phone No">
+        <div class="help-block with-errors"></div>
+        <i class="las la-phone"></i>
+        </div>
+        </div>
+        <div class="col-md-6">
+        <div class="form-group">
+        <input type="text" name="subject" class="form-control" id="subject" required data-error="Please enter your subject" placeholder="Your subject">
+        <div class="help-block with-errors"></div>
+        <i class="las la-id-card"></i>
+        </div>
+        </div>
+        <div class="col-lg-12 col-md-12">
+        <div class="form-group">
+        <textarea name="message" id="message" class="form-control" cols="30" rows="6" required data-error="Please enter your message" placeholder="Write your message..."></textarea>
+        <div class="help-block with-errors"></div>
+        <i class="las la-sms"></i>
+        </div>
+        </div>
+        <div class="col-lg-12 col-md-12">
+        <button type="submit" class="default-btn-one">Send</button>
+        <div id="msgSubmit" class="h3 text-center hidden"></div>
+        <div class="clearfix"></div>
+        </div>
+        </div>
+        </form>
     </div>
     </div>
     </div>
