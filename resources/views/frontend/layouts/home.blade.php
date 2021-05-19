@@ -7,7 +7,7 @@
         <div class="row align-items-center">
             <div class="col-lg-5">
                 <div class="about-image">
-                    <img src="{{asset('frontend/img/choose-img.jpg')}}" style="height: 500px;" alt="Image">
+                    <img src="{{asset('frontend/img/contact-bg.jpg')}}" style="height: 500px;" alt="Image">
                 </div>
             </div>
             <div class="col-lg-7">

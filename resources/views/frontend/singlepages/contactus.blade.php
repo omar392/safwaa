@@ -7,7 +7,7 @@
     <div class="page-content">
     <h2>{{__('messages.Contact Us')}} </h2>
     <ul>
-    <li><a href="index.html">{{__('messages.Home')}}  <i class="las la-angle-right"></i></a></li>
+    <li><a href="{{route('fronts.index')}}">{{__('messages.Home')}}  <i class="las la-angle-right"></i></a></li>
     <li>{{__('messages.Contact Us')}} </li>
     </ul>
     </div>

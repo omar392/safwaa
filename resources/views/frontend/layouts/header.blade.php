@@ -57,7 +57,7 @@
                 <div class="atorn-responsive-menu">
                     <div class="logo">
                         <a href="index.html">
-                            <img src="{{asset('frontend/img/toto.jfif')}}" alt="logo">
+                            <img src="{{asset('frontend/img/toto.jfif')}}" style="width: 100px;" alt="logo">
                         </a>
                     </div>
                 </div>
