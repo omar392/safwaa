@@ -111,12 +111,12 @@
                             <li class="nav-item">
                                 <a href="{{route('fronts.contactus')}}" class="nav-link">{{__('messages.Contact Us')}}</a>
                             </li>
-                            
+{{--                             
                             <li class="nav-item">
                                 <a href="javascript:void(0)" class="nav-link search-box">
                                     <i class="las la-search"></i>
                                 </a>
-                            </li>
+                            </li> --}}
                         </ul>
                     </div>
                 </nav>
