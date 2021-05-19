@@ -36,7 +36,7 @@
                 <p>
                     <a href="{{ route('logout') }}"
                     onclick="event.preventDefault();
-                      document.getElementById('logout-form').submit();" class="dropdown-item dropdown-footer">Logout</a>
+                      document.getElementById('logout-form').submit();" class="dropdown-item dropdown-footer">تسجيل الخروج</a>
                       
                       <form id="logout-form" action="{{ route('logout') }}" method="POST" class="d-none">
                           @csrf
@@ -44,16 +44,6 @@
                 </p>
                 {{-- <p><a href="">المساعدة</a></p> --}}
             </div>
-            <div class="who_is_online">
-                <h3>العامليين حاليا علي النظام</h3>
-
-                <div class="employee_online">
-                    <img src="{{asset('dashboard/img/user.jpg')}}" class="img-circle bring_right">
-
-                    <p>حسام جمال توفيق زوين</p>
-
-                    <p>مركز التقنية - جامعة المنصورة</p>
-                </div>
             </div>
         </div>
         <!--/End left sidebar-->
