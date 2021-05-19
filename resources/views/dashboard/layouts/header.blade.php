@@ -7,7 +7,7 @@
     <div class="col-sm-3 col-xs-12 head_buttons_area bring_right hidden-xs">
         <div class="inline-block messages bring_right">
             <span class="glyphicon glyphicon-envelope" data-toggle="tooltip" data-placement="left"
-                  title="الرسائل"><span class="notifications">9</span></span>
+                  title="الرسائل"><span class="notifications"></span></span>
         </div>
         <div class="inline-block full_screen bring_right hidden-xs">
             <span class="glyphicon glyphicon-fullscreen" data-toggle="tooltip" data-placement="left"
