@@ -26,7 +26,13 @@
                         <h4>استعراض الموقع</h4>
                     </a>
                     <img src="{{asset('dashboard/img/titi.jfif')}}" alt="Paris" class="center">
+                    <div class="container">
+                        <br>
+                        <br>
+                        <p>Copyright @2021 <a href="https://www.facebook.com/profile.php?id=100002626340909">omar asharf</a></p>
+                    </div>
                 </div>
+                
             </div>
         </div>
     </div>
