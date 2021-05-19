@@ -81,6 +81,12 @@
                     <li><a href="{{route('contactus.view')}}">عرض الرسائل الواردة</a></li>
                 </ul>
             </li>
+            <li><span class="glyphicon glyphicon-bullhorn"></span><a href="">أراء العملاء فى الصفوة (قالوا عنا)</a>
+                <ul class="drop_main_menu">
+                    <li><a href="{{route('tells.view')}}">عرض الأراء</a></li>
+                    <li><a href="{{route('tells.add')}}">إضافة رأى  جديد</a></
+                </ul>
+            </li>
         </ul>
     </div>
 </div>

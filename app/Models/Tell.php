@@ -5,7 +5,7 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class Service extends Model
+class Tell extends Model
 {
     use HasFactory;
     public function getNameAttribute()
@@ -14,6 +14,13 @@ class Service extends Model
     		return $this->name_ar;
     	}
     	return $this->name_en;
+    }
+    public function getWorkAttribute()
+    {
+    	if (app()->getLocale() == 'ar') {
+    		return $this->work_ar;
+    	}
+    	return $this->work_en;
     }
     public function getDescriptionAttribute()
     {

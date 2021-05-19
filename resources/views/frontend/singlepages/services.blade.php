@@ -29,8 +29,8 @@
     <div class="col-lg-4 col-sm-6">
     <div class="our-service-card">
     <i class="las la-balance-scale"></i>
-    <h3><span>{{$service->name_ar}}</span></h3>
-    <p>{{$service->description_ar}}</p>
+    <h3><span>{{$service->name}}</span></h3>
+    <p>{{$service->description}}</p>
     </div>
     </div>
 @endforeach

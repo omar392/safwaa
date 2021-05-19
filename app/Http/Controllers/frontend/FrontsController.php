@@ -4,15 +4,19 @@ namespace App\Http\Controllers\frontend;
 
 use App\Http\Controllers\Controller;
 use App\Models\Aboutus;
+use App\Models\Awareness;
 use App\Models\Blog;
 use App\Models\Contact;
+use App\Models\Customer;
 use App\Models\Email;
 use App\Models\Galery;
+use App\Models\Isue;
 use App\Models\Member;
 use App\Models\Question;
 use App\Models\Service;
 use App\Models\Slider;
 use App\Models\Social;
+use App\Models\Tell;
 use Illuminate\Http\Request;
 
 class FrontsController extends Controller
@@ -21,6 +25,11 @@ class FrontsController extends Controller
         $data['emails'] = Email::first();
         $data['sliders'] = Slider::all();
         $data['services'] = Service::all();
+        $data['news'] = Awareness::all();
+        $data['members'] = Member::all();
+        $data['customers'] = Customer::all();
+        $data['tells'] = Tell::all();
+        $data['isues'] = Isue::first();
         return view('frontend.layouts.home',$data);
     }
     public function aboutus(){

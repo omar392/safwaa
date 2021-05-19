@@ -10,25 +10,25 @@
         <div class="container">
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">القضايا التى حلت</label>
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">عدد العملاء</label>
                     <input type="number" name="solved" class="form-control" id="input0" value="{{$edit_data->solved}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">القضايا قيد الانتظار </label>
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text"> عدد فريق العمل </label>
                     <input type="number"  name="waited" class="form-control" id="input0"value="{{$edit_data->waited}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">قضايا تدرس</label>
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">عدد الفروع  </label>
                     <input type="number"  name="studied" class="form-control" id="input0" value="{{$edit_data->studied}}" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">Lower Degree</label>
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">سنوات الخبرة</label>
                     <input type="number" name="losed" class="form-control" id="input0" value="{{$edit_data->losed}}" required >
                 </div>
             </div>

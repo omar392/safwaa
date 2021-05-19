@@ -14,7 +14,8 @@
     <link rel="stylesheet" href="{{asset('frontend/css/style.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/responsive.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/rtl.css')}}">
-    <link rel="icon" type="image/png" href="{{asset('frontend/img/favicon.png')}}">
+    {{-- <link rel="icon" type="image/png" href="{{asset('frontend/img/favicon.png')}}"> --}}
+    <link rel="icon" type="image/png" href="{{asset('dashboard/img/toto.jfif')}}">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Cairo&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{asset('frontend/font-awesome/css/font-awesome.min.css')}}">
@@ -26,7 +27,7 @@
   width: 50%;
 }
 </style>
-    <title> الصفوة للمحاماة</title>
+<title>@yield('pageTitle')  {{__('messages.Name')}} </title>
 </head>
 <body>
     <div class="preloader">

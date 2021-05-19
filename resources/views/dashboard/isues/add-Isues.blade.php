@@ -11,26 +11,26 @@
             
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">القضايا التى حلت</label>
-                    <input type="number" name="solved" class="form-control" id="input0" placeholder="القضايا التى حلت" required >
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">عدد العملاء</label>
+                    <input type="number" name="solved" class="form-control" id="input0" placeholder="عدد العملاء" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">القضايا  قيد الانتظار</label>
-                    <input type="number"  name="waited" class="form-control" id="input0" placeholder="القضايا  قيد الانتظار" required >
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">عدد فريق العمل</label>
+                    <input type="number"  name="waited" class="form-control" id="input0" placeholder="عدد فريق العمل " required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">القضايا محل الدراسة</label>
-                    <input type="number"  name="studied" class="form-control" id="input0" placeholder="القضايا محل الدراسة" required >
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">عدد الفروع</label>
+                    <input type="number"  name="studied" class="form-control" id="input0" placeholder="عدد الفروع" required >
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
-                    <label for="input0" class="col-sm-2 control-label bring_right left_text">قضايا خسرت</label>
-                    <input type="number" name="losed" class="form-control" id="input0" placeholder="قضايا خسرت " required >
+                    <label for="input0" class="col-sm-2 control-label bring_right left_text">سنوات الخبرة</label>
+                    <input type="number" name="losed" class="form-control" id="input0" placeholder="سنوات الخبرة  " required >
                 </div>
             </div>
             <div class="form-group">

@@ -1,4 +1,5 @@
 @extends('frontend.layouts.master')
+
 @section('content')
     <div class="page-banner bg-1">
         <div class="d-table">
@@ -28,8 +29,8 @@
         <div class="col-lg-6">
           <div class="choose-card">
         <i class="las la-balance-scale"></i>
-        <h3>{{$about->name_ar}}</h3>
-        <p>{{$about->title_ar}}</p>
+        <h3>{{$about->name}}</h3>
+        <p>{{$about->title}}</p>
         </div>
         </div>
       
