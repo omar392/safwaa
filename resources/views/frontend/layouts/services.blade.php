@@ -6,9 +6,9 @@
         @foreach ($services as $service)
                 <div class="col-lg-3 bor-right col-sm-6">
                     <div class="low-card">
-                        <h3>{{$service->name_ar}}</h3>
+                        <h3>{{$service->name}}</h3>
                         <i class="las la-balance-scale"></i>
-                        <p>{{$service->description_ar}}</p>
+                        <p>{{$service->description}}</p>
                     </div>
                 </div>
         @endforeach

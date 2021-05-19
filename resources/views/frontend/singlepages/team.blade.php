@@ -40,8 +40,8 @@
     <img src="{{asset('upload/slider_images/'.$member->image)}}" alt="Image" style="width: 300px;hight: 200px;" class="center" >
     </a>
     <div class="attorney-card-text">
-    <h3><a href="#">{{$member->name_en}}</a></h3>
-    <p>{{$member->degree_en}}</p>
+    <h3><a href="#">{{$member->name}}</a></h3>
+    <p>{{$member->degree}}</p>
     </div>
     </div>
     </div>

@@ -20,10 +20,10 @@
                 <table class="table table-bordered">
                     <tr>
                         <td>#</td>
-                        <td>قضايا حسمت</td>
-                        <td>قضايا قيد الانتظار</td>
-                        <td>قضايا تدرس</td>
-                        <td>قضايا خسرت</td>
+                        <td>عدد العملاء</td>
+                        <td> فريق العمل</td>
+                        <td>عدد الفروع</td>
+                        <td>سنوات الخبرة</td>
                         <td>التحكم</td>
                     </tr>
                     @foreach ($all_data as $key=>$isues)

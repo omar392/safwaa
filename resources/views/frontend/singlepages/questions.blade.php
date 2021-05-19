@@ -29,9 +29,9 @@
     <li class="accordion-item">
     <a class="accordion-title active" href="javascript:void(0)">
     <i class="las la-plus"></i>
-   {{$question->question_en}}
+   {{$question->question}}
     </a>
-    <p class="accordion-content show">{{$question->answer_en}}</p>
+    <p class="accordion-content show">{{$question->answer}}</p>
     </li>
 
     @endforeach

@@ -161,6 +161,16 @@ Route::prefix('blogs')->group(function(){
     Route::get('/delete/{id}','App\Http\Controllers\Dashboard\BlogsController@delete')->name('blogs.delete');
 });
 
+//tells 
+Route::prefix('tells')->group(function(){
+    Route::get('/view','App\Http\Controllers\Dashboard\TellsController@view')->name('tells.view');
+    Route::get('/add','App\Http\Controllers\Dashboard\TellsController@add')->name('tells.add');
+    Route::post('/store','App\Http\Controllers\Dashboard\TellsController@store')->name('tells.store');
+    Route::get('/edit/{id}','App\Http\Controllers\Dashboard\TellsController@edit')->name('tells.edit');
+    Route::post('/update/{id}','App\Http\Controllers\Dashboard\TellsController@update')->name('tells.update');
+    Route::get('/delete/{id}','App\Http\Controllers\Dashboard\TellsController@delete')->name('tells.delete');
+});
+
 //income from contactus
 Route::prefix('message_income')->group(function(){
     Route::get('/view','App\Http\Controllers\Dashboard\ContactusController@view')->name('contactus.view');
