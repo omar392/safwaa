@@ -8,7 +8,7 @@
         <div class="page-content">
         <h2>{{__('messages.About Us')}}</h2>
         <ul>
-        <li><a href="#">{{__('messages.Home')}}  <i class="las la-angle-right"></i></a></li>
+        <li><a href="{{route('fronts.index')}}">{{__('messages.Home')}}  <i class="las la-angle-right"></i></a></li>
         <li>{{__('messages.About Us')}}</li>
         </ul>
         </div>
