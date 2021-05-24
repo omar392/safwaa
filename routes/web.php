@@ -63,12 +63,12 @@ Route::prefix('members')->group(function(){
 
 //company services //
 Route::prefix('services')->group(function(){
-    Route::get('/view','App\Http\Controllers\Dashboard\servicesController@view')->name('services.view');
-    Route::get('/add','App\Http\Controllers\Dashboard\servicesController@add')->name('services.add');
-    Route::post('/store','App\Http\Controllers\Dashboard\servicesController@store')->name('services.store');
-    Route::get('/edit/{id}','App\Http\Controllers\Dashboard\servicesController@edit')->name('services.edit');
-    Route::post('/update/{id}','App\Http\Controllers\Dashboard\servicesController@update')->name('services.update');
-    Route::get('/delete/{id}','App\Http\Controllers\Dashboard\servicesController@delete')->name('services.delete');
+    Route::get('/view','App\Http\Controllers\Dashboard\ServicesController@view')->name('services.view');
+    Route::get('/add','App\Http\Controllers\Dashboard\ServicesController@add')->name('services.add');
+    Route::post('/store','App\Http\Controllers\Dashboard\ServicesController@store')->name('services.store');
+    Route::get('/edit/{id}','App\Http\Controllers\Dashboard\ServicesController@edit')->name('services.edit');
+    Route::post('/update/{id}','App\Http\Controllers\Dashboard\ServicesController@update')->name('services.update');
+    Route::get('/delete/{id}','App\Http\Controllers\Dashboard\ServicesController@delete')->name('services.delete');
 });
 
 //customers 

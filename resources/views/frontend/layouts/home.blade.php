@@ -22,7 +22,7 @@
                             <ul>
                                 <li>
                                     <i class="las la-check-square"></i>
-                                    {{$service->description}}
+                                    {{$service->name}}
                                 </li>
                             </ul>
                         </div>
@@ -260,12 +260,13 @@
             {{--  --}}
             @foreach ($members as $member)
             <div class="col-lg-4 col-sm-6">
-                <div class="attorney-card">
-                    <a href="attorney-details.html">
-                        <img src="{{asset('upload/slider_images/'.$member->image)}}" alt="Image" style="width: 300px;hight: 200px;" class="center" >                    </a>
-                    <div class="attorney-card-text">
-                        <h3><a href="#">{{$member->name}}</a></h3>
-                        <p>{{$member->degree}}</p>
+                <div class="attorney-card" style="width: 100%">
+                   
+                        <img src="{{asset('upload/slider_images/'.$member->image)}}" alt="Image" style="width: 100%;">
+                   
+                    <div class="attorney-card-text" style="width: 50%;">
+                        <h5 style="text-align: right;font-size: 15px">{{$member->name}}</h5>
+                        <p style="text-align: right;font-size: 12px">{{$member->degree}}</p>
                     </div>
                 </div>
             </div>
