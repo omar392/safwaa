@@ -20,5 +20,8 @@ class DatabaseSeeder extends Seeder
             'email' => 'admin@safwa.com',
             'password' => bcrypt('123456123'),
         ]);
+        $this->call([
+            SocialSeeder::class,
+            ]);
     }
 }

@@ -45,4 +45,6 @@ laws of Egypt',
 "Why Exp"=>'Because We Have Distinguished Lawyers With Experience In Various Branches Of Law',
 "Performance"=>'Outstanding Performance',
 "Performance Det"=>'We Perform Your Requirements According To You According To The Standards To The Fullest',
+"Reply"=>'You will receive a reply as soon as possible',
+
 ];

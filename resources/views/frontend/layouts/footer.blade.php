@@ -19,6 +19,16 @@
                                 <i class="lab la-twitter"></i>
                             </a>
                         </li>
+                        {{-- <li>
+                            <a href="whatsapp://send?text=YOUR_MESSAGE" target="_blank">
+                                <i class="fa fa-whatsapp fa_custom fa-5x"></i>
+                            </a>
+                        </li> --}}
+                        <li>
+                            <a href="https://wa.me/{{$emails->whats_app_num}}" target="_blank">
+                                <i class="fa fa-whatsapp fa_custom fa-5x"></i>
+                            </a>
+                        </li>
                         <li>
                             <a href="https://{{$emails->inestgram}}" target="_blank">
                                 <i class="lab la-instagram"></i>
@@ -141,10 +151,14 @@
                     <h3>{{__('messages.Contacts')}}</h3>
                     <ul class="info-list">
                         <li>
-                            <i class="las la-phone"></i>
+                            <i class="fa fa-whatsapp fa_custom fa-5x"></i>
                             {{-- <i class="las la-battery-three-quarters"></i> --}}
-                            <a href="tel:{{$emails->whats_app_num}}">{{$emails->whats_app_num}}</a>
+                            <a href="https://wa.me/{{$emails->whats_app_num}}">{{$emails->whats_app_num}}</a>
                         </li>
+                        {{-- <li> 
+                            <i class="fa fa-whatsapp fa_custom fa-5x"></i>
+                            <a href="https://wa.me/{{$emails->whats_app_num}}" target="_blank"></a>
+                        </li> --}}
                         <li>
                             <a href="https://{{$emails->gmail}}">
                                 <i class="las la-envelope"></i>

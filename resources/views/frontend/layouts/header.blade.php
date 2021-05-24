@@ -12,7 +12,7 @@
                         </li>
                         <li>
                             <a href="#">
-                                <i class="las la-phone"></i>
+                                <i class="fa fa-whatsapp fa_custom fa-3x"></i>
                                 {{$emails->whats_app_num}}
                             </a>
                         </li>
@@ -29,7 +29,7 @@
                             <a href="https://{{$emails->twitter}}" target="_blank">
                                 <i class="lab la-twitter"></i>
                             </a>
-                        </li>
+                        </li>    
                         <li>
                             <a href="https://{{$emails->inestgram}}" target="_blank">
                                 <i class="lab la-instagram"></i>
@@ -37,7 +37,6 @@
                         </li>
                         <li>
                             <a href="https://{{$emails->gmail}}" target="_blank">
-                                {{-- <i class="lab la-sms"></i> --}}
                                 <i class="las la-sms"></i>
                             </a>
                         </li>
