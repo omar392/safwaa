@@ -31,7 +31,7 @@
     <i class="las la-plus"></i>
    {{$question->question}}
     </a>
-    <p class="accordion-content show">{{$question->answer}}</p>
+    <p class="accordion-content show">{!! $question->answer !!}</p>
     </li>
 
     @endforeach

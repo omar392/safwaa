@@ -37,8 +37,8 @@
                         <td>{{$tells->name_en}}</td>
                         <td>{{$tells->work_ar}}</td>
                         <td>{{$tells->work_en}}</td>
-                        <td>{{$tells->description_ar}}</td>
-                        <td>{{$tells->description_en}}</td>
+                        <td>{!! $tells->description_ar !!}</td>
+                        <td>{!! $tells->description_en !!}</td>
                         <td>
                             <a href="{{route('tells.edit',$tells->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

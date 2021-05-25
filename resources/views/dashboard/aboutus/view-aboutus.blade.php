@@ -31,8 +31,8 @@
                         <td>{{$key+1}}</td>
                         <td>{{$aboutus->name_ar}}</td>
                         <td>{{$aboutus->name_en}}</td>
-                        <td>{{$aboutus->title_ar}}</td>
-                        <td>{{$aboutus->title_en}}</td>
+                        <td>{!! $aboutus->title_ar !!}</td>
+                        <td>{!! $aboutus->title_en !!}</td>
                         <td>
                             <a href="{{route('aboutus.edit',$aboutus->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

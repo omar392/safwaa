@@ -29,10 +29,10 @@
                     @foreach ($all_data as $key=>$goals)
                     <tr>
                         <td>{{$key+1}}</td>
-                        <td>{{$goals->goal_ar}}</td>
-                        <td>{{$goals->goal_en}}</td>
-                        <td>{{$goals->message_ar}}</td>
-                        <td>{{$goals->message_en}}</td>
+                        <td>{!! $goals->goal_ar !!}</td>
+                        <td>{!! $goals->goal_en !!}</td>
+                        <td>{!! $goals->message_ar !!}</td>
+                        <td>{!! $goals->message_en !!}</td>
                         <td>
                             <a href="{{route('goals.edit',$goals->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

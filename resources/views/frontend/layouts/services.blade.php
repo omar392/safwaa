@@ -8,7 +8,7 @@
                     <div class="low-card">
                         <h3>{{$service->name}}</h3>
                         <i class="las la-balance-scale"></i>
-                        <p>{{$service->description}}</p>
+                        <p>{!! $service->description !!}</p>
                     </div>
                 </div>
         @endforeach

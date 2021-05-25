@@ -30,7 +30,7 @@
           <div class="choose-card">
         <i class="las la-balance-scale"></i>
         <h3>{{$about->name}}</h3>
-        <p>{{$about->title}}</p>
+        <p>{!! $about->title !!}</p>
         </div>
         </div>
       

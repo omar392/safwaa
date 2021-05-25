@@ -29,7 +29,7 @@
     </a>
     <div class="blog-card-text">
      <h3>{{$blog->title}}</h3>
-    <p>{{$blog->subject}}</p>
+    <p>{!! $blog->subject !!}</p>
     </div>
     </div>
     </div>

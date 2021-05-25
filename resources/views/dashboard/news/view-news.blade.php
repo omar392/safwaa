@@ -31,8 +31,8 @@
                         <td>{{$key+1}}</td>
                         <td>{{$news->new_title_ar}}</td>
                         <td>{{$news->new_title_en}}</td>
-                        <td>{{$news->new_description_ar}}</td>
-                        <td>{{$news->new_description_en}}</td>
+                        <td>{!! $news->new_description_ar !!}</td>
+                        <td>{!! $news->new_description_en !!}</td>
                         <td>
                             <a href="{{route('news.edit',$news->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>
