@@ -33,8 +33,8 @@
                         <td><img src="{{(!empty($blogs->image))?url('upload/slider_images/'.$blogs->image):url('upload/no_image.jfif')}}" width="120px" height="130px" alt="image"></td>
                         <td>{{$blogs->title_ar}}</td>
                         <td>{{$blogs->title_en}}</td>
-                        <td>{{$blogs->subject_ar}}</td>
-                        <td>{{$blogs->subject_en}}</td>
+                        <td>{!! $blogs->subject_ar !!}</td>
+                        <td>{!! $blogs->subject_en !!}</td>
                         <td>
                             <a href="{{route('blogs.edit',$blogs->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

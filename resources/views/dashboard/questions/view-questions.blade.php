@@ -31,8 +31,8 @@
                         <td>{{$key+1}}</td>
                         <td style="width: 25%">{{$questions->question_ar}}</td>
                         <td>{{$questions->question_en}}</td>
-                        <td>{{$questions->answer_ar}}</td>
-                        <td>{{$questions->answer_en}}</td>
+                        <td>{!! $questions->answer_ar !!}</td>
+                        <td>{!! $questions->answer_en !!}</td>
                         <td>
                             <a href="{{route('questions.edit',$questions->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

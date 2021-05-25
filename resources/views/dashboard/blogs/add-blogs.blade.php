@@ -31,13 +31,21 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">وصف الخبر بالعربية </label>
-                    <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل موضوع المدونة بالعربية" required ></textarea>
+                    {{-- <textarea name="subject_ar" class="form-control" id="" cols="160" rows="10"  placeholder="أدخل موضوع المدونة بالعربية" required ></textarea> --}}
+                    <textarea name="subject_ar" id="editor1"></textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor1' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Enter The New Description In English</label>
-                    <textarea name="subject_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Blog Subject In English" required ></textarea>
+                    {{-- <textarea name="subject_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter Blog Subject In English" required ></textarea> --}}
+                    <textarea name="subject_en" id="editor"></textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">

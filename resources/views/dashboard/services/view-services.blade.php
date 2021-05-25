@@ -31,8 +31,8 @@
                         <td>{{$key+1}}</td>
                         <td>{{$services->name_ar}}</td>
                         <td>{{$services->name_en}}</td>
-                        <td>{{$services->description_ar}}</td>
-                        <td>{{$services->description_en}}</td>
+                        <td>{!! $services->description_ar !!}</td>
+                        <td>{!! $services->description_en !!}</td>
                         <td>
                             <a href="{{route('services.edit',$services->id)}}" class="glyphicon glyphicon-pencil" data-toggle="tooltip"
                                data-placement="top" title="تعديل"></a>

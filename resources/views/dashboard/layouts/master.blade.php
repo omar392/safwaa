@@ -10,7 +10,8 @@
     <link href="{{asset('dashboard/css/icon.css')}}" rel="stylesheet">
     <link href="{{asset('dashboard/css/style.css')}}" rel="stylesheet">
     <link href="{{asset('dashboard/css/ar.css')}}" rel="stylesheet" class="lang_css arabic">
-    <link rel="icon" type="image/png" href="{{asset('dashboard/img/toto.jfif')}}">  
+    <link rel="icon" type="image/png" href="{{asset('dashboard/img/toto.jfif')}}"> 
+    <script src="https://cdn.ckeditor.com/4.16.1/standard/ckeditor.js"></script> 
 </head>
 <body>
 <div class="container-fluid">

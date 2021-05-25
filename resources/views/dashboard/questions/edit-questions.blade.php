@@ -23,14 +23,21 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">الاجابة بالعربية</label>
-                    <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->answer_ar}}</textarea>
+                    {{-- <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10" required >{{$edit_data->answer_ar}}</textarea> --}}
+                    <textarea name="answer_ar" id="editor1">{!! $edit_data->answer_ar !!}</textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor1' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Answer English</label>
-                    <textarea name="answer_en" class="form-control" id="" cols="160" rows="10" required>{{$edit_data->answer_en}}</textarea>
-
+                    {{-- <textarea name="answer_en" class="form-control" id="" cols="160" rows="10" required>{{$edit_data->answer_en}}</textarea> --}}
+                    <textarea name="answer_en" id="editor">{!! $edit_data->answer_en !!}</textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">

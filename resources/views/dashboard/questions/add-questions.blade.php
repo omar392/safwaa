@@ -24,13 +24,21 @@
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text"> اجابة السؤال بالعربية </label>
-                    <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10"  placeholder="  إجابة السؤال بالعربية" required ></textarea>
+                    {{-- <textarea name="answer_ar" class="form-control" id="" cols="160" rows="10"  placeholder="  إجابة السؤال بالعربية" required ></textarea> --}}
+                    <textarea name="answer_ar" id="editor1"></textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor1' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">
                 <div class="col-sm-10">
                     <label for="input0" class="col-sm-2 control-label bring_right left_text">Enter The Answer In English</label>
-                    <textarea name="answer_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter The Answer In English" required ></textarea>
+                    {{-- <textarea name="answer_en" class="form-control" id="" cols="160" rows="10"  placeholder="Enter The Answer In English" required ></textarea> --}}
+                    <textarea name="answer_en" id="editor"></textarea>
+                    <script>
+                            CKEDITOR.replace( 'editor' );
+                    </script>
                 </div>
             </div>
             <div class="form-group">

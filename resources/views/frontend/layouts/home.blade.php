@@ -216,7 +216,7 @@
                 </div>
                 <div class="img-text">
                     <h3>{{$new->title}}</h3>
-                    <p>{{$new->description}}</p>
+                    <p>{!! $new->description !!}</p>
                 </div>
             </div>
             @endforeach
@@ -243,7 +243,7 @@
                     </div>
                 </div>
                 <div class="img-text">
-                    <p>{{$tell->description}}</p>
+                    <p>{!! $tell->description !!}</p>
                 </div>
             </div>
             @endforeach
